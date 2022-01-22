@@ -10,6 +10,17 @@ In the project directory, you can run:
 
 This installs any required npm packages
 
+### `amplify init`
+
+Then answer these questions:
+Do you want to use an existing environment? Yes
+Choose the environment you would like to use: dev
+ Choose your default editor: (select your default editor using the arrow keys)
+Select the authentication method you want to use: AWS profile
+
+This initializes AWS Amplify. 
+
+Then you can run:
 ### `npm start`
 
 This starts the project on your local machine
