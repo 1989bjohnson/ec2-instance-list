@@ -4,7 +4,6 @@ import 'react-bootstrap-table2-paginator/dist/react-bootstrap-table2-paginator.m
 import React from 'react'
 import Amplify from 'aws-amplify'
 import { withAuthenticator } from '@aws-amplify/ui-react'
-import { Routes, Route } from "react-router-dom";
 import InstanceList from "./components/InstanceList";
 
 import awsExports from "./aws-exports";
@@ -14,9 +13,7 @@ const App = () => {
 
   return (
     <div className="App">
-      <Routes>
-        <Route path="/" element={<InstanceList />} />
-      </Routes>
+      <InstanceList />
     </div>
   );
 }

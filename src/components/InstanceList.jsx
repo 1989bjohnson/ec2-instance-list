@@ -12,10 +12,8 @@ function Home() {
       name: `${faker.name.firstName()} ${faker.name.lastName()}`,
       id: `${faker.random.alphaNumeric()}-${faker.random.alphaNumeric(6)}`,
       type: `${faker.random.alphaNumeric(2)}.${faker.random.word()}`,
-      state: faker.datatype.boolean() ? <span class="badge bg-success">Running</span> : <span class="badge bg-danger">Down</span>,
-      az: `${faker.random.locale().slice(0,2)}-${faker.address.cardinalDirection()}-${faker.random.alphaNumeric(
-        2
-      )}`,
+      state: faker.datatype.boolean() ? <span className="badge bg-success">Running</span> : <span className="badge bg-danger">Down</span>,
+      az: `${faker.random.locale().slice(0,2)}-${faker.address.cardinalDirection()}-${faker.random.alphaNumeric(2)}`,
       publicIP: faker.internet.ip(),
       privateIP: faker.internet.ip(),
     };
