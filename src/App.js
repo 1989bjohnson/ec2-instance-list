@@ -1,10 +1,16 @@
 import './App.css';
 import 'react-bootstrap-table-next/dist/react-bootstrap-table2.min.css';
 import 'react-bootstrap-table2-paginator/dist/react-bootstrap-table2-paginator.min.css';
-import { Routes, Route, Link } from "react-router-dom";
+import React from 'react'
+import Amplify from 'aws-amplify'
+import { withAuthenticator } from '@aws-amplify/ui-react'
+import { Routes, Route } from "react-router-dom";
 import InstanceList from "./components/InstanceList";
 
-const App =() => {
+import awsExports from "./aws-exports";
+Amplify.configure(awsExports);
+
+const App = () => {
 
   return (
     <div className="App">
@@ -15,4 +21,4 @@ const App =() => {
   );
 }
 
-export default App;
+export default withAuthenticator(App)

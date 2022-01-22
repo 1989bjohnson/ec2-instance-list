@@ -41,7 +41,8 @@
 * {
   text-align: left;
 }
-.caret {
+
+tr .caret {
   display: inline-block;
   width: 0;
   height: 0;
